@@ -1,6 +1,6 @@
 import React from "react";
 // import "./Skills.css";
-import portfolioData from "../assets/data/portfolio.json";
+import portfolioData from "../../assets/data/portfolio.json";
 
 const Skills: React.FC = () => {
   const skillGroups = portfolioData.skills;

@@ -1,7 +1,7 @@
 import React from "react";
 // import "./Contact.css";
-import portfolioData from "../assets/data/portfolio.json";
-import Footer from "./Footer";
+import portfolioData from "../../assets/data/portfolio.json";
+import Footer from "../common/Footer";
 
 const Contact: React.FC = () => {
   const { socialLinks } = portfolioData.contact;

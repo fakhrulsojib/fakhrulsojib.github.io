@@ -1,9 +1,9 @@
 import Header from "./sections/header/Header";
-import Home from "./sections/Home";
+import Home from "./sections/home/Home";
 // import About from "./sections/About";
-import Skills from "./sections/Skills";
-import Projects from "./sections/Projects";
-import Contact from "./sections/Contact";
+import Skills from "./sections/skill/Skills";
+import Projects from "./sections/project/Projects";
+import Contact from "./sections/contact/Contact";
 
 const App: React.FC = () => {
   return (

@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/BalloonGroup.css";
+import "./BalloonGroup.css";
 
 const BalloonGroup: React.FC = () => {
   const balloonPositions = [

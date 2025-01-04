@@ -1,7 +1,7 @@
 import React from "react";
-import BalloonGroup from "../components/Balloon";
-import "../styles/Home.css";
-import homeData from "../assets/data/home.json";
+import BalloonGroup from "../../components/balloon/Balloon";
+import "./Home.css";
+import homeData from "../../assets/data/home.json";
 import "animate.css";
 
 const Home: React.FC = () => {
