@@ -1,6 +1,6 @@
 import React from "react";
 import BalloonGroup from "../components/Balloon";
-// import "./Home.css";
+import "../styles/Home.css";
 import homeData from "../assets/data/home.json";
 import "animate.css";
 

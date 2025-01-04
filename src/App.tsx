@@ -1,8 +1,8 @@
 import Header from "./sections/header/Header";
 import Home from "./sections/Home";
-import About from "./sections/About";
-import Projects from "./sections/Projects";
+// import About from "./sections/About";
 import Skills from "./sections/Skills";
+import Projects from "./sections/Projects";
 import Contact from "./sections/Contact";
 
 const App: React.FC = () => {
@@ -11,9 +11,9 @@ const App: React.FC = () => {
       <Header />
       <main>
         <Home />
-        <About />
-        <Projects />
         <Skills />
+        {/* <About /> */}
+        <Projects />
         <Contact />
       </main>
     </>

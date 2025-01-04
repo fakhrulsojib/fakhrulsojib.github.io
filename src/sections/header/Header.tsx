@@ -93,11 +93,6 @@ const Header: React.FC = () => {
   return (
     <header className={`header ${isHeaderHidden ? "hidden" : ""}`}>
       <ThemeToggler />
-      <HamburgerMenu
-        ref={hamburgerRef}
-        isMenuOpen={isMenuOpen}
-        toggleMenu={toggleMenu}
-      />
       <Navigation
         ref={navRef}
         isMenuOpen={isMenuOpen}
@@ -105,6 +100,11 @@ const Header: React.FC = () => {
         selectedSection={selectedSection}
         setSelectedSection={setSelectedSection}
         closeMenu={() => setIsMenuOpen(false)}
+      />
+      <HamburgerMenu
+        ref={hamburgerRef}
+        isMenuOpen={isMenuOpen}
+        toggleMenu={toggleMenu}
       />
     </header>
   );
