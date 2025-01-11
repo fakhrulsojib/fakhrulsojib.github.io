@@ -51,7 +51,7 @@
 
 .nav {
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
   gap: 24px;
   visibility: visible;
   flex-wrap: nowrap;
@@ -67,6 +67,7 @@
   padding: 0;
   flex-wrap: nowrap;
   justify-content: flex-start;
+  align-items: center;
 }
 
 .nav-link {
@@ -88,7 +89,7 @@
   .nav {
     position: absolute;
     top: 55px;
-    right: 24px;
+    left: 24px;
     flex-direction: column;
     background-color: var(--background-color, #ffffff);
     width: 0;

@@ -1,4 +1,4 @@
-import { forwardRef } from "react";
+import { forwardRef, ReactNode } from "react";
 
 interface NavItem {
   id: string;
@@ -11,11 +11,19 @@ interface NavigationProps {
   selectedSection: string;
   setSelectedSection: (section: string) => void;
   closeMenu: () => void;
+  children?: ReactNode;
 }
 
 const Navigation = forwardRef<HTMLElement, NavigationProps>(
   (
-    { isMenuOpen, navigation, selectedSection, setSelectedSection, closeMenu },
+    {
+      isMenuOpen,
+      navigation,
+      selectedSection,
+      setSelectedSection,
+      closeMenu,
+      children,
+    },
     ref
   ) => (
     <nav ref={ref} className={`nav ${isMenuOpen ? "open" : ""}`}>
@@ -36,6 +44,7 @@ const Navigation = forwardRef<HTMLElement, NavigationProps>(
             </a>
           </li>
         ))}
+        {children}
       </ul>
     </nav>
   )

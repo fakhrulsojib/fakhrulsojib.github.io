@@ -18,6 +18,7 @@ const ThemeToggler: React.FC = () => {
     setTheme(newTheme);
     document.documentElement.setAttribute("data-theme", newTheme);
     document.body.classList.toggle("light");
+    document.body.classList.toggle("dark");
   };
 
   return (
