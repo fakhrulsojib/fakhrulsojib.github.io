@@ -77,28 +77,27 @@ img {
 }
 
 :root {
-  /* Light theme (default) */
-  --background-color: #ffffff;
-  --background-secondary: #f9f9f9;
-  --text-color: #000000;
-  --text-primary: #333333;
-  --text-secondary: #666666;
-  --primary-color: #007bff;
-  --primary-hover: #0056b3;
-  --text-button: #ffffff;
-  --shadow-color: rgba(0, 0, 0, 0.1);
-  --section-background-color: #f9f9f9;
+  --darkbg: #251d29;
+  --darkt: #ffd1f7;
+  --lightbg: #fff;
+  --lightt: #d43370;
+
+  --toggleHeight: 16em;
+  --toggleWidth: 30em;
+  --toggleBtnRadius: 10em;
+
+  --bgColor--night: #423966;
+  --mooncolor: #d9fbff;
+  --bgColor--day: #9ee3fb;
 }
 
-:root[data-theme="dark"] {
-  --background-color: #121212;
-  --background-secondary: #1e1e1e;
-  --text-color: #e0e0e0;
-  --text-primary: #ffffff;
-  --text-secondary: #b0b0b0;
-  --primary-color: #4a9eff;
-  --primary-hover: #77b7ff;
-  --text-button: #ffffff;
-  --shadow-color: rgba(0, 0, 0, 0.3);
-  --section-background-color: #1e1e1e;
+body {
+  transition: all 0.2s ease-in-out;
+  background: var(--darkbg);
+  color: var(--darkt);
+}
+
+body.light {
+  background: var(--lightbg);
+  color: var(--lightt);
 }

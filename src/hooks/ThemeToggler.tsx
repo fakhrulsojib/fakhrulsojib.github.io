@@ -17,20 +17,13 @@ const ThemeToggler: React.FC = () => {
     const newTheme = theme === "light" ? "dark" : "light";
     setTheme(newTheme);
     document.documentElement.setAttribute("data-theme", newTheme);
+    document.body.classList.toggle("light");
   };
 
   return (
-    <button
-      className={`theme-toggle ${theme}`}
-      onClick={toggleTheme}
-      aria-label={`Switch to ${theme === "light" ? "dark" : "light"} theme`}
-    >
-      <div className="icon-wrapper">
-        <div className="sun-moon">
-          <div className="dots"></div>
-        </div>
-      </div>
-    </button>
+    <div onClick={toggleTheme} className={`tdnn ${theme}`}>
+      <div className="moon"></div>
+    </div>
   );
 };
 
