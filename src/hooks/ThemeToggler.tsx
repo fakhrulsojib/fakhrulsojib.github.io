@@ -11,14 +11,21 @@ const ThemeToggler: React.FC = () => {
     const initialTheme = prefersDark ? "dark" : "light";
     setTheme(initialTheme);
     document.documentElement.setAttribute("data-theme", initialTheme);
+
+    // Remove any existing theme classes first
+    document.body.classList.remove("light", "dark");
+    // Add the initial theme class
+    document.body.classList.add(initialTheme);
   }, []);
 
   const toggleTheme = () => {
     const newTheme = theme === "light" ? "dark" : "light";
     setTheme(newTheme);
     document.documentElement.setAttribute("data-theme", newTheme);
-    document.body.classList.toggle("light");
-    document.body.classList.toggle("dark");
+
+    // Toggle theme classes
+    document.body.classList.remove(theme);
+    document.body.classList.add(newTheme);
   };
 
   return (

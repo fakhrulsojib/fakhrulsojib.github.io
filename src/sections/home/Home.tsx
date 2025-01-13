@@ -5,7 +5,7 @@ import homeData from "../../assets/data/home.json";
 import "animate.css";
 
 const Home: React.FC = () => {
-  const { heading, name, tagline, resumeLink, about } = homeData;
+  const { heading, name, tagline, resumeLink, about, socialLinks } = homeData;
 
   return (
     <section id="home" className="home">
@@ -16,9 +16,24 @@ const Home: React.FC = () => {
         </h1>
         <div className="home-tagline">{tagline}</div>
         <div className="home-about">{about}</div>
-        <a href={resumeLink} target="_blank" className="home-button">
-          Resume
-        </a>
+        <div className="home-actions">
+          <a href={resumeLink} target="_blank" className="home-button">
+            Resume
+          </a>
+          <div className="social-links">
+            {socialLinks.map((link) => (
+              <a
+                key={link.name}
+                href={link.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="social-link"
+              >
+                <img src={link.icon} alt={link.name} className="social-icon" />
+              </a>
+            ))}
+          </div>
+        </div>
       </div>
       <BalloonGroup />
     </section>

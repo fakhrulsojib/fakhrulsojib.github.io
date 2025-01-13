@@ -3,5 +3,22 @@
     "name": "Md Fakhrul Islam",
     "tagline": "A full stack software engineer.",
     "about": "Software Engineer at Therap (BD) Ltd. and a Mathematics undergraduate from Shahjalal University of Science and Technology, Sylhet, Bangladesh, who loves solving problems using programming. I’ve practiced competitive programming for over 4 years, both individually and as part of teams, in online and onsite contests.",
-    "resumeLink": "https://drive.google.com/file/d/1xMiupqmn6SmYmZroLTsKIopG0QIBezuB/view?usp=drive_link"
+    "resumeLink": "https://drive.google.com/file/d/1xMiupqmn6SmYmZroLTsKIopG0QIBezuB/view?usp=drive_link",
+    "socialLinks": [
+        {
+            "name": "GitHub",
+            "url": "https://github.com/fakhrulsojib",
+            "icon": "/src/assets/images/icons/github-logo.png"
+        },
+        {
+            "name": "LinkedIn",
+            "url": "https://linkedin.com/in/fakhrulsojib",
+            "icon": "/src/assets/images/icons/linkedin-logo.png"
+        },
+        {
+            "name": "Facebook",
+            "url": "https://facebook.com/fakhrulsojib",
+            "icon": "/src/assets/images/icons/facebook-logo.png"
+        }
+    ]
 }
