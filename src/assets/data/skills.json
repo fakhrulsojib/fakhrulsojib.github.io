@@ -1,0 +1,21 @@
+{
+    "skills": {
+        "proficient": [
+            "C++",
+            "Java",
+            "Spring",
+            "PostgreSQL",
+            "Oracle",
+            "Git"
+        ],
+        "familiar": [
+            "Javascript",
+            "Python",
+            "jQuery",
+            "React",
+            "Spring Boot",
+            "MySQL",
+            "Linux"
+        ]
+    }
+}

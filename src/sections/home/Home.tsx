@@ -1,5 +1,5 @@
 import React from "react";
-import BalloonGroup from "../../components/balloon/Balloon";
+import BalloonGroup from "../../components/balloonGroup/BalloonGroup";
 import "./Home.css";
 import homeData from "../../assets/data/home.json";
 import "animate.css";

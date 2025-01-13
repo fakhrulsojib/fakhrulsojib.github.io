@@ -6,25 +6,6 @@
             "I’ve practiced competitive programming for over 4 years, both individually and as part of teams, in online and onsite contests."
         ]
     },
-    "skills": {
-        "proficient": [
-            "C++",
-            "Java",
-            "Spring",
-            "PostgreSQL",
-            "Oracle",
-            "Git"
-        ],
-        "familiar": [
-            "Javascript",
-            "Python",
-            "jQuery",
-            "React",
-            "Spring Boot",
-            "MySQL",
-            "Linux"
-        ]
-    },
     "projects": [
         {
             "title": "Samagam",
