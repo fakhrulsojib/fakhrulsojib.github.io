@@ -1,7 +1,10 @@
 :root {
   --background-color: #ffffff;
   --text-color: #000000;
-  --section-bg-color: #f5f5f5;
+  --text-primary: #1a1a1a;
+  --text-secondary: #4a4a4a;
+  --background-secondary: #f0f0f0;  /* Subtle light grey for cards */
+  --primary-color: #2563eb;  /* Nice blue for accents */
   
   --toggleHeight: 16em;
   --toggleWidth: 30em;
@@ -41,9 +44,9 @@ section {
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 8px;
   padding: 16px;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  background-color: var(--section-bg-color);
+  /* border-radius: 8px; */
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+  /* background-color: var(--section-bg-color); */
   color: var(--text-color);
   box-sizing: border-box;
 }
@@ -93,11 +96,17 @@ img {
 body.dark {
   --background-color: #000000;
   --text-color: #ffffff;
-  --section-bg-color: #1a1a1a;
+  --text-primary: #ffffff;
+  --text-secondary: #a0a0a0;
+  --background-secondary: #1a1a1a;
+  --primary-color: #3b82f6;
 }
 
 body.light {
   --background-color: #ffffff;
   --text-color: #000000;
-  --section-bg-color: #f5f5f5;
+  --text-primary: #1a1a1a;
+  --text-secondary: #4a4a4a;
+  --background-secondary: #f0f0f0;
+  --primary-color: #2563eb;
 }

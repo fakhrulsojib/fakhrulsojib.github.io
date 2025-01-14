@@ -1,8 +1,8 @@
 import React from "react";
 import ProjectCard from "../../components/projectCard/ProjectCard";
-import portfolioData from "../../assets/data/portfolio.json";
+import portfolioData from "../../assets/data/projects.json";
 import defaultProjectImage from "../../assets/images/default-project.jpg";
-// import "./Projects.css";
+import "./Projects.css";
 
 interface Project {
   title: string;

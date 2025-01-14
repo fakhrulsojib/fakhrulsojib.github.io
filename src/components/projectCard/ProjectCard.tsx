@@ -1,5 +1,5 @@
 import React from "react";
-// import "./ProjectCard.css";
+import "./ProjectCard.css";
 
 interface ProjectCardProps {
   title: string;
@@ -32,6 +32,15 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         <p className="project-card-description">
           {description || "No description available."}
         </p>
+        {technologies && technologies.length > 0 && (
+          <div className="project-card-technologies">
+            {technologies.map((tech, index) => (
+              <span key={`${tech}-${index}`} className="technology-tag">
+                {tech}
+              </span>
+            ))}
+          </div>
+        )}
         {link && (
           <a
             href={link}
@@ -41,11 +50,6 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           >
             View Project
           </a>
-        )}
-        {technologies && technologies.length > 0 && (
-          <p className="project-card-technologies">
-            <strong>Technologies:</strong> {technologies.join(", ")}
-          </p>
         )}
       </div>
     </div>
