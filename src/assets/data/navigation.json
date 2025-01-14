@@ -5,10 +5,6 @@
             "name": "Home"
         },
         {
-            "id": "about",
-            "name": "About"
-        },
-        {
             "id": "projects",
             "name": "Projects"
         },

@@ -3,6 +3,8 @@ import BalloonGroup from "../../components/balloonGroup/BalloonGroup";
 import "./Home.css";
 import homeData from "../../assets/data/home.json";
 import "animate.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import iconMap from "../../utils/iconMap";
 
 const Home: React.FC = () => {
   const { heading, name, tagline, resumeLink, about, socialLinks } = homeData;
@@ -28,8 +30,14 @@ const Home: React.FC = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="social-link"
+                aria-label={link.name}
               >
-                <img src={link.icon} alt={link.name} className="social-icon" />
+                {iconMap[link.icon] && (
+                  <FontAwesomeIcon
+                    icon={iconMap[link.icon]}
+                    className="social-icon"
+                  />
+                )}
               </a>
             ))}
           </div>

@@ -1,0 +1,16 @@
+{
+    "socialLinks": [
+        {
+            "name": "LinkedIn",
+            "url": "https://linkedin.com/in/fakhrulsojib",
+            "icon": "linkedin"
+        },
+        {
+            "name": "Facebook",
+            "url": "https://facebook.com/fakhrulsojib",
+            "icon": "facebook"
+        }
+    ],
+    "email": "fakhrulsojib@gmail.com",
+    "copyright": "© 2024-2025 Md Fakhrul Islam. All rights reserved."
+}

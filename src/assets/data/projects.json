@@ -11,36 +11,6 @@
                 "MongoDB",
                 "Tailwind CSS"
             ]
-        },
-        {
-            "title": "Samagam",
-            "description": "Event Management Web Application",
-            "link": "https://bitbucket.org/fakhrulsojib/samagam/src/development/",
-            "technologies": [
-                "React",
-                "Node.js",
-                "Express",
-                "MongoDB",
-                "Tailwind CSS",
-                "Express",
-                "MongoDB",
-                "Tailwind CSS",
-                "Express",
-                "MongoDB",
-                "Tailwind CSS"
-            ]
-        },
-        {
-            "title": "Samagam",
-            "description": "Event Management Web Application",
-            "link": "https://bitbucket.org/fakhrulsojib/samagam/src/development/",
-            "technologies": [
-                "React",
-                "Node.js",
-                "Express",
-                "MongoDB",
-                "Tailwind CSS"
-            ]
         }
     ]
 }

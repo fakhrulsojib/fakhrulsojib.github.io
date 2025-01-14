@@ -7,7 +7,7 @@ const Skills: React.FC = () => {
   const skillGroups = portfolioData.skills;
 
   return (
-    <div className="skills-section">
+    <div id="skills" className="skills-section">
       <LaptopAnimation />
       <div className="skills-content">
         <h2 className="section-heading">My Skills</h2>
