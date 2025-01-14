@@ -5,11 +5,11 @@
             "description": "Event Management Web Application",
             "link": "https://bitbucket.org/fakhrulsojib/samagam/src/development/",
             "technologies": [
-                "React",
-                "Node.js",
-                "Express",
-                "MongoDB",
-                "Tailwind CSS"
+                "Spring MVC",
+                "Hibernate",
+                "PostgreSQL",
+                "JavaScript",
+                "jQuery"
             ]
         }
     ]
