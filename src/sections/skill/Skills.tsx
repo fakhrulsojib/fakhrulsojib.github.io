@@ -2,23 +2,42 @@ import React from "react";
 import "./Skills.css";
 import portfolioData from "../../assets/data/skills.json";
 import LaptopAnimation from "../../components/laptopAnimation/LaptopAnimation";
+import { useInView } from "../../hooks/useInView";
 
 const Skills: React.FC = () => {
+  const [laptopRef, laptopInView] = useInView();
+  const [contentRef, contentInView] = useInView();
   const skillGroups = portfolioData.skills;
 
   return (
     <div id="skills" className="skills-section">
-      <LaptopAnimation />
-      <div className="skills-content">
+      <div
+        ref={laptopRef}
+        className={laptopInView ? "animate__animated animate__fadeInLeft" : ""}
+      >
+        <LaptopAnimation />
+      </div>
+      <div
+        ref={contentRef}
+        className={`skills-content ${
+          contentInView ? "animate__animated animate__fadeInRight" : ""
+        }`}
+      >
         <h2 className="section-heading">My Skills</h2>
         <div className="skills-group">
-          {Object.entries(skillGroups).map(([groupName, skills]) => (
-            <div key={groupName} className="skills-list">
+          {Object.entries(skillGroups).map(([groupName, skills], index) => (
+            <div
+              key={groupName}
+              className={`skills-list ${
+                contentInView ? "animate__animated animate__fadeInUp" : ""
+              }`}
+              style={contentInView ? { animationDelay: `${index * 0.2}s` } : {}}
+            >
               <h3>{groupName.charAt(0).toUpperCase() + groupName.slice(1)}</h3>
               <div className="skills-list-content">
-                {skills.map((skill: string, index: number) => (
+                {skills.map((skill: string, idx: number) => (
                   <div
-                    key={`${skill}-${index}`}
+                    key={`${skill}-${idx}`}
                     className={`skill ${groupName.toLowerCase()}`}
                   >
                     {skill}
