@@ -3,7 +3,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  padding: 40px 20px;
+  padding: 20px 0px 40px 20px;
   flex-wrap: wrap;
   gap: 0;
   max-width: 1200px;
@@ -14,7 +14,7 @@
   flex: 3;
   min-width: 300px;
   max-width: 700px;
-  text-align: left;
+  text-align: center;
   padding-right: 10px;
 }
 
@@ -23,7 +23,6 @@
   min-width: 200px;
   display: flex;
   justify-content: flex-start;
-  padding-left: 20px;
 }
 
 .section-heading {
@@ -49,7 +48,7 @@
 .home-about {
   font-size: 1.2rem;
   color: var(--text-secondary);
-  max-width: 600px;
+  max-width: 800px;
   margin-bottom: 30px;
   line-height: 1.6;
 }
