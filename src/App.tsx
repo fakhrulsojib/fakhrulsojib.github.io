@@ -4,6 +4,7 @@ import Skills from "./sections/skill/Skills";
 import Projects from "./sections/project/Projects";
 import Footer from "./sections/footer/Footer";
 import Education from "./sections/Education";
+import CompetitiveProgramming from "./sections/competetive-programming/CompetitiveProgramming";
 
 const App: React.FC = () => {
   return (
@@ -13,6 +14,7 @@ const App: React.FC = () => {
         <Home />
         <Skills />
         <Education />
+        <CompetitiveProgramming />
         <Projects />
         <Footer />
       </main>

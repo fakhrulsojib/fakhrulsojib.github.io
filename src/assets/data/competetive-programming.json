@@ -1,0 +1,32 @@
+{
+    "competetive-programming": [
+        {
+            "platform": "Codeforces",
+            "max-rating": "1955",
+            "rank": {
+                "name": "Candidate Master",
+                "color": "#aa00aa"
+            },
+            "solved": "1300+",
+            "contest-participation": "180+",
+            "profile": "https://codeforces.com/profile/fakhrulsojib"
+        },
+        {
+            "platform": "Codechef",
+            "max-rating": "2078",
+            "rank": {
+                "name": "⭐⭐⭐⭐⭐",
+                "color": "#000000"
+            },
+            "solved": "100+",
+            "contest-participation": "10+",
+            "profile": "https://codechef.com/users/fakhrulsojib"
+        }
+    ],
+    "achievements": [
+        "Solved 2500+ problems across platforms",
+        "Highest rating 1955 (Candidate Master) on Codeforces",
+        "Ranked 21st in 2021 & 2022 ICPC Asia Dhaka Regional Online Preliminary Contests",
+        "Participated in 200+ contests"
+    ]
+}
