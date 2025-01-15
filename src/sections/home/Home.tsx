@@ -23,7 +23,7 @@ const Home: React.FC = () => {
         <h1
           className={`section-heading ${
             contentInView
-              ? "animate__animated animate__fadeIn animate__delay-1s"
+              ? "animate__animated animate__fadeIn animate__delay-0.5s"
               : ""
           }`}
         >
@@ -33,7 +33,7 @@ const Home: React.FC = () => {
         <div
           className={`home-tagline ${
             contentInView
-              ? "animate__animated animate__fadeIn animate__delay-1s"
+              ? "animate__animated animate__fadeIn animate__delay-0.5s"
               : ""
           }`}
         >
@@ -42,7 +42,7 @@ const Home: React.FC = () => {
         <div
           className={`home-about ${
             contentInView
-              ? "animate__animated animate__fadeIn animate__delay-2s"
+              ? "animate__animated animate__fadeIn animate__delay-1s"
               : ""
           }`}
         >
@@ -51,7 +51,7 @@ const Home: React.FC = () => {
         <div
           className={`home-actions ${
             contentInView
-              ? "animate__animated animate__fadeInUp animate__delay-2s"
+              ? "animate__animated animate__fadeInUp animate__delay-1s"
               : ""
           }`}
         >

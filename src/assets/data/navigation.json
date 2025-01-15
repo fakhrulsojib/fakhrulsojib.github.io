@@ -9,6 +9,14 @@
             "name": "Skills"
         },
         {
+            "id": "experience",
+            "name": "Experience"
+        },
+        {
+            "id": "education",
+            "name": "Education"
+        },
+        {
             "id": "projects",
             "name": "Projects"
         },
