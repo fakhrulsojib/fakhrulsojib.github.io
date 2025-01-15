@@ -1,0 +1,42 @@
+{
+    "education": [
+        {
+            "id": "edu1",
+            "school": "Shahjalal University of Science and Technology",
+            "degree": "Bachelor's Degree",
+            "field": "Mathematics",
+            "startDate": "2018",
+            "endDate": "2023",
+            "location": "Sylhet, Bangladesh",
+            "intersting-courses": [
+                "Linear Algebra",
+                "Discrete Mathematics",
+                "Data Structures",
+                "Algorithm Design and Analysis",
+                "Statistics and Probability",
+                "Numerical Analysis",
+                "..."
+            ],
+            "highlights": [
+                "Vice President of Euclid Programming Club",
+                "Programming Mentor"
+            ]
+        },
+        {
+            "id": "edu2",
+            "school": "Bir Shreshtha Noor Mohammad Public College",
+            "degree": "HSC",
+            "startDate": "2015",
+            "endDate": "2017",
+            "location": "Dhaka, Bangladesh"
+        },
+        {
+            "id": "edu3",
+            "school": "Ataturk Government Model High School",
+            "degree": "SSC",
+            "startDate": "2013",
+            "endDate": "2015",
+            "location": "Feni, Bangladesh"
+        }
+    ]
+}
