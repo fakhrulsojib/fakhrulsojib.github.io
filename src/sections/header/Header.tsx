@@ -1,4 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowUp } from "@fortawesome/free-solid-svg-icons";
 import ThemeToggler from "../../hooks/ThemeToggler";
 import Navigation from "./Navigation";
 import HamburgerMenu from "./HamburgerMenu";
@@ -13,22 +15,26 @@ const Header: React.FC = () => {
   );
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isHeaderHidden, setIsHeaderHidden] = useState(false);
+  const [showGoToTop, setShowGoToTop] = useState(false);
 
   const navRef = useRef<HTMLElement | null>(null);
   const hamburgerRef = useRef<HTMLDivElement | null>(null);
-  const lastScrollY = useRef(0); // Track the last scroll position
+  const lastScrollY = useRef(0);
 
-  // Handle section highlighting on scroll
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
-          if (entry.isIntersecting) {
+          const rect = entry.target.getBoundingClientRect();
+          const windowHeight = window.innerHeight;
+          const threshold = windowHeight * 0.2;
+
+          if (rect.top <= threshold && rect.bottom > threshold) {
             setSelectedSection(entry.target.id);
           }
         });
       },
-      { threshold: 0.5 }
+      { rootMargin: "-20% 0px -80% 0px" }
     );
 
     navigation.forEach((navItem) => {
@@ -48,7 +54,6 @@ const Header: React.FC = () => {
     };
   }, [navigation]);
 
-  // Close menu on outside click
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       const target = event.target as Node;
@@ -68,16 +73,17 @@ const Header: React.FC = () => {
     };
   }, []);
 
-  // Handle hiding and showing header on scroll
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
 
       if (currentScrollY > lastScrollY.current && currentScrollY > 50) {
-        setIsHeaderHidden(true); // Hide header when scrolling down
+        setIsHeaderHidden(true);
       } else {
-        setIsHeaderHidden(false); // Show header when scrolling up
+        setIsHeaderHidden(false);
       }
+
+      setShowGoToTop(currentScrollY > window.innerHeight * 0.5);
 
       lastScrollY.current = currentScrollY;
     };
@@ -90,24 +96,40 @@ const Header: React.FC = () => {
 
   const toggleMenu = () => setIsMenuOpen((prev) => !prev);
 
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
-    <header className={`header ${isHeaderHidden ? "hidden" : ""}`}>
-      <Navigation
-        ref={navRef}
-        isMenuOpen={isMenuOpen}
-        navigation={navigation}
-        selectedSection={selectedSection}
-        setSelectedSection={setSelectedSection}
-        closeMenu={() => setIsMenuOpen(false)}
+    <>
+      <header className={`header ${isHeaderHidden ? "hidden" : ""}`}>
+        <Navigation
+          ref={navRef}
+          isMenuOpen={isMenuOpen}
+          navigation={navigation}
+          selectedSection={selectedSection}
+          setSelectedSection={setSelectedSection}
+          closeMenu={() => setIsMenuOpen(false)}
+        >
+          <ThemeToggler />
+        </Navigation>
+        <HamburgerMenu
+          ref={hamburgerRef}
+          isMenuOpen={isMenuOpen}
+          toggleMenu={toggleMenu}
+        />
+      </header>
+      <button
+        className={`go-to-top ${showGoToTop ? "visible" : ""}`}
+        onClick={scrollToTop}
+        aria-label="Go to top"
       >
-        <ThemeToggler />
-      </Navigation>
-      <HamburgerMenu
-        ref={hamburgerRef}
-        isMenuOpen={isMenuOpen}
-        toggleMenu={toggleMenu}
-      />
-    </header>
+        <FontAwesomeIcon icon={faArrowUp} />
+      </button>
+    </>
   );
 };
 
