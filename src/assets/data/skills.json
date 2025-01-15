@@ -15,7 +15,9 @@
             "React",
             "Spring Boot",
             "MySQL",
-            "Linux"
+            "Linux",
+            "Docker",
+            "Playwright"
         ]
     }
 }
