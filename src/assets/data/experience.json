@@ -1,0 +1,29 @@
+{
+    "experience": [
+        {
+            "company": "Therap (BD) Ltd.",
+            "type": "Hybrid",
+            "positions": [
+                {
+                    "designation": "Associate Software Engineer",
+                    "start-date": "2023-03",
+                    "end-date": "2024-04"
+                },
+                {
+                    "designation": "Software Engineer",
+                    "start-date": "2024-05",
+                    "end-date": "present"
+                }
+            ],
+            "location": "Dhaka, Bangladesh",
+            "profile-link": "https://therapbd.com/employee-profile/?userId=o3076z",
+            "tech-stack": [
+                "React",
+                "Node.js",
+                "MongoDB",
+                "Express",
+                "TypeScript"
+            ]
+        }
+    ]
+}
