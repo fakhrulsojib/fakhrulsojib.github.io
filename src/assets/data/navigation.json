@@ -5,12 +5,12 @@
             "name": "Home"
         },
         {
-            "id": "projects",
-            "name": "Projects"
-        },
-        {
             "id": "skills",
             "name": "Skills"
+        },
+        {
+            "id": "projects",
+            "name": "Projects"
         },
         {
             "id": "contact",
