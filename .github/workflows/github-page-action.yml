@@ -23,6 +23,9 @@ jobs:
           npm ci
           npm run build
 
+      - name: Copy sitemap to dist
+        run: cp src/assets/data/sitemap.xml dist/
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
