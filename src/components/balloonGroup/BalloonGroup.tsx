@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./BalloonGroup.css";
 
 const BalloonGroup: React.FC = () => {
@@ -22,22 +22,38 @@ const BalloonGroup: React.FC = () => {
     "#FFD700",
   ];
 
+  const [poppedBalloons, setPoppedBallons] = useState<number[]>([]);
+
+  const handleBalloonClick = (index: number) => {
+    if (!poppedBalloons.includes(index)) {
+      const audio = new Audio("/pop.mp3");
+      audio.play();
+      setPoppedBallons([...poppedBalloons, index]);
+    }
+  };
+
   return (
     <div className="balloon-group">
-      {colors.map((color, index) => (
-        <div
-          key={index}
-          className="balloon"
-          style={
-            {
-              "--color": color,
-              "--i": index,
-              top: balloonPositions[index].top,
-              left: balloonPositions[index].left,
-            } as React.CSSProperties
-          }
-        />
-      ))}
+      {colors.map((color, index) => {
+        if (poppedBalloons.includes(index)) {
+          return null;
+        }
+        return (
+          <div
+            key={index}
+            className="balloon"
+            style={
+              {
+                "--color": color,
+                "--i": index,
+                top: balloonPositions[index].top,
+                left: balloonPositions[index].left,
+              } as React.CSSProperties
+            }
+            onClick={() => handleBalloonClick(index)}
+          />
+        );
+      })}
     </div>
   );
 };
