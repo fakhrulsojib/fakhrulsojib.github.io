@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./BalloonGroup.css";
 
 const BalloonGroup: React.FC = () => {
@@ -23,12 +23,23 @@ const BalloonGroup: React.FC = () => {
   ];
 
   const [poppedBalloons, setPoppedBallons] = useState<number[]>([]);
+  const [startTime, setStartTime] = useState<number | null>(null);
+  const [endTime, setEndTime] = useState<number | null>(null);
+
+  useEffect(() => {
+    setStartTime(Date.now());
+  }, []);
 
   const handleBalloonClick = (index: number) => {
     if (!poppedBalloons.includes(index)) {
       const audio = new Audio("/pop.mp3");
       audio.play();
-      setPoppedBallons([...poppedBalloons, index]);
+      const newPoppedBalloons = [...poppedBalloons, index];
+      setPoppedBallons(newPoppedBalloons);
+
+      if (newPoppedBalloons.length === colors.length) {
+        setEndTime(Date.now());
+      }
     }
   };
 
@@ -54,6 +65,11 @@ const BalloonGroup: React.FC = () => {
           />
         );
       })}
+      {endTime && startTime && (
+        <div className="timer-display">
+          Time: {((endTime - startTime) / 1000).toFixed(2)}s
+        </div>
+      )}
     </div>
   );
 };
