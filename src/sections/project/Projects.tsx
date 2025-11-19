@@ -1,7 +1,7 @@
 import React from "react";
 import ProjectCard from "../../components/projectCard/ProjectCard";
 import portfolioData from "../../assets/data/projects.json";
-import defaultProjectImage from "../../assets/images/default-project.jpg";
+import defaultProjectImage from "../../assets/images/project_placeholder.png";
 import "./Projects.css";
 import { useInView } from "../../hooks/useInView";
 
@@ -21,9 +21,8 @@ const Projects: React.FC = () => {
     <section id="projects" className="projects">
       <div ref={contentRef} className="section-content">
         <h2
-          className={`section-heading ${
-            contentInView ? "animate__animated animate__fadeInDown" : ""
-          }`}
+          className={`section-heading ${contentInView ? "animate__animated animate__fadeInDown" : ""
+            }`}
         >
           My Projects
         </h2>
