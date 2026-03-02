@@ -1,23 +1,27 @@
 {
     "skills": {
         "proficient": [
-            "C++",
             "Java",
-            "Spring",
-            "PostgreSQL",
+            "C++",
+            "Python",
+            "JavaScript",
+            "Spring Boot",
+            "React",
             "Oracle",
+            "PostgreSQL",
+            "Docker",
             "Git"
         ],
         "familiar": [
-            "Javascript",
-            "Python",
-            "jQuery",
-            "React",
-            "Spring Boot",
-            "MySQL",
-            "Linux",
-            "Docker",
-            "Playwright"
+            "FastAPI",
+            "Redis",
+            "ChromaDB",
+            "Kafka",
+            "AWS",
+            "Playwright",
+            "JUnit",
+            "LLM (Ollama / Gemini)",
+            "RAG Systems"
         ]
     }
 }

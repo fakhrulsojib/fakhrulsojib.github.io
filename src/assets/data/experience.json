@@ -1,29 +1,29 @@
 {
     "experience": [
         {
-            "company": "Therap (BD) Ltd.",
+            "company": "Therap Services LLC",
             "type": "Hybrid",
             "positions": [
                 {
                     "designation": "Associate Software Engineer",
-                    "start-date": "2023-03",
-                    "end-date": "2024-04"
+                    "start-date": "Mar 2023",
+                    "end-date": "Apr 2024"
                 },
                 {
                     "designation": "Software Engineer",
-                    "start-date": "2024-05",
-                    "end-date": "present"
+                    "start-date": "May 2024",
+                    "end-date": "Present"
                 }
             ],
             "location": "Dhaka, Bangladesh",
             "profile-link": "https://therapbd.com/employee-profile/?userId=o3076z",
             "tech-stack": [
                 "Java",
-                "Spring",
-                "JavaScript",
+                "Spring Boot",
+                "React",
                 "Playwright",
                 "Oracle",
-                "Git"
+                "Docker"
             ]
         }
     ]

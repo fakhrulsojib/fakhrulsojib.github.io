@@ -13,10 +13,10 @@
         },
         {
             "platform": "Codechef",
-            "max-rating": "2078",
+            "max-rating": "2282",
             "rank": {
-                "name": "⭐⭐⭐⭐⭐",
-                "color": "#000000"
+                "name": "⭐⭐⭐⭐⭐⭐",
+                "color": "#ff0000"
             },
             "solved": "100+",
             "contest-participation": "10+",

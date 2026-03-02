@@ -1,6 +1,31 @@
 {
     "projects": [
         {
+            "title": "Pulse AI",
+            "description": "Real-time log analytics pipeline with unsupervised anomaly detection and RAG-based NL queries via local LLM.",
+            "link": "https://github.com/fakhrulsojib/Pulse-AI",
+            "technologies": [
+                "FastAPI",
+                "Kafka",
+                "PostgreSQL",
+                "Docker",
+                "ChromaDB",
+                "Ollama"
+            ]
+        },
+        {
+            "title": "Expenalyzer",
+            "description": "RESTful financial backend with JWT authentication and Amazon RDS integrations.",
+            "link": "https://github.com/fakhrulsojib/Expenalyzer",
+            "technologies": [
+                "Spring Boot",
+                "REST API",
+                "Docker",
+                "Amazon RDS",
+                "JUnit"
+            ]
+        },
+        {
             "title": "Samagam",
             "description": "Event Management Web Application",
             "link": "https://bitbucket.org/fakhrulsojib/samagam/src/development/",
