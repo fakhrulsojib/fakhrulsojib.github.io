@@ -16,7 +16,7 @@ const Home: React.FC = () => {
     <section id="home" className="home">
       <div
         ref={contentRef}
-        className={`section-content ${
+        className={`home-content ${
           contentInView ? "animate__animated animate__fadeInLeft" : ""
         }`}
       >

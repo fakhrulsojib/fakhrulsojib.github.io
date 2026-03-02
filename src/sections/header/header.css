@@ -43,12 +43,6 @@
   transform: translateY(-8px) rotate(-45deg);
 }
 
-.header-right {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-}
-
 .nav {
   display: flex;
   justify-content: flex-start;

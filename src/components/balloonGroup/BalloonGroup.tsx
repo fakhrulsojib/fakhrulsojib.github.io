@@ -22,7 +22,7 @@ const BalloonGroup: React.FC = () => {
     "#FFD700",
   ];
 
-  const [poppedBalloons, setPoppedBallons] = useState<number[]>([]);
+  const [poppedBalloons, setPoppedBalloons] = useState<number[]>([]);
   const [startTime, setStartTime] = useState<number | null>(null);
   const [endTime, setEndTime] = useState<number | null>(null);
 
@@ -35,7 +35,7 @@ const BalloonGroup: React.FC = () => {
       const audio = new Audio("/pop.mp3");
       audio.play();
       const newPoppedBalloons = [...poppedBalloons, index];
-      setPoppedBallons(newPoppedBalloons);
+      setPoppedBalloons(newPoppedBalloons);
 
       if (newPoppedBalloons.length === colors.length) {
         setEndTime(Date.now());

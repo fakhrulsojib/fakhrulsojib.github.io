@@ -5,21 +5,10 @@ import {
   faLocationDot,
   faStar,
 } from "@fortawesome/free-solid-svg-icons";
-import { useInView } from "../hooks/useInView";
-import educationData from "../assets/data/education.json";
+import { useInView } from "../../hooks/useInView";
+import educationData from "../../assets/data/education.json";
+import { EducationItem } from "../../types/data.types";
 import "./education.css";
-
-interface EducationItem {
-  id: string;
-  school: string;
-  degree: string;
-  field?: string;
-  startDate: string;
-  endDate: string;
-  location: string;
-  "intersting-courses"?: string[];
-  highlights?: string[];
-}
 
 const Education: React.FC = () => {
   const { education } = educationData;

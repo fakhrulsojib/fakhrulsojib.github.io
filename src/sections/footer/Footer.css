@@ -24,34 +24,18 @@
   text-align: center;
 }
 
-.social-links {
-  display: flex;
+.footer .social-links {
   gap: 15px;
   justify-content: center;
   flex-wrap: wrap;
 }
 
-.social-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.footer .social-link {
   width: 35px;
   height: 35px;
-  border-radius: 50%;
-  background-color: var(--background-secondary);
-  transition: all 0.2s ease;
-  color: var(--text-color);
-  border: 1px solid var(--text-color);
 }
 
-.social-link:hover {
-  transform: translateY(-3px);
-  color: var(--primary-color);
-  background-color: var(--background-color);
-  border-color: var(--primary-color);
-}
-
-.social-icon {
+.footer .social-icon {
   width: 18px !important;
   height: 18px !important;
 }
@@ -93,12 +77,12 @@
     font-size: 1.5rem;
   }
 
-  .social-link {
+  .footer .social-link {
     width: 32px;
     height: 32px;
   }
 
-  .social-icon {
+  .footer .social-icon {
     width: 16px !important;
     height: 16px !important;
   }
@@ -106,4 +90,4 @@
   .footer-email {
     font-size: 0.9rem;
   }
-} 
+}

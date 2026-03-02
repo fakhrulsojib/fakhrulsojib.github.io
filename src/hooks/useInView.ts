@@ -1,17 +1,25 @@
 import { useEffect, useRef, useState } from 'react';
 
-export const useInView = (options = {}) => {
+interface UseInViewOptions {
+  threshold?: number;
+  rootMargin?: string;
+}
+
+export const useInView = (options: UseInViewOptions = {}) => {
   const [isInView, setIsInView] = useState(false);
   const elementRef = useRef<HTMLDivElement | null>(null);
+  const optionsRef = useRef(options);
 
   useEffect(() => {
+    if (isInView) return;
+
     const observer = new IntersectionObserver(([entry]) => {
-      if (entry.isIntersecting && !isInView) {
+      if (entry.isIntersecting) {
         setIsInView(true);
       }
     }, {
       threshold: 0.1,
-      ...options
+      ...optionsRef.current
     });
 
     const currentElement = elementRef.current;
@@ -25,7 +33,7 @@ export const useInView = (options = {}) => {
         observer.unobserve(currentElement);
       }
     };
-  }, [options, isInView]);
+  }, [isInView]);
 
   return [elementRef, isInView] as const;
 }; 

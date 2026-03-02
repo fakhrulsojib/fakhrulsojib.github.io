@@ -21,11 +21,6 @@
   transition: transform 0.2s ease-out, opacity 0.2s ease-out;
 }
 
-.balloon.popped {
-  transform: scale(0);
-  opacity: 0;
-}
-
 .balloon::before {
   content: '';
   width: 16px;

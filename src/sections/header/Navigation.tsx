@@ -1,9 +1,5 @@
 import { forwardRef, ReactNode } from "react";
-
-interface NavItem {
-  id: string;
-  name: string;
-}
+import { NavItem } from "../../types/data.types";
 
 interface NavigationProps {
   isMenuOpen: boolean;

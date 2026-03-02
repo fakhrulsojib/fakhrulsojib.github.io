@@ -9,19 +9,8 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { useInView } from "../../hooks/useInView";
 import cpData from "../../assets/data/competetive-programming.json";
+import { CPProfile } from "../../types/data.types";
 import "./competitive-programming.css";
-
-interface CPProfile {
-  platform: string;
-  "max-rating": string;
-  rank: {
-    name: string;
-    color: string;
-  };
-  solved: string;
-  "contest-participation": string;
-  profile: string;
-}
 
 const CompetitiveProgramming: React.FC = () => {
   const { "competetive-programming": profiles, achievements } = cpData;

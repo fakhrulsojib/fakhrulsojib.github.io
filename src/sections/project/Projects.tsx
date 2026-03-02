@@ -2,16 +2,9 @@ import React from "react";
 import ProjectCard from "../../components/projectCard/ProjectCard";
 import portfolioData from "../../assets/data/projects.json";
 import defaultProjectImage from "../../assets/images/project_placeholder.png";
+import { Project } from "../../types/data.types";
 import "./Projects.css";
 import { useInView } from "../../hooks/useInView";
-
-interface Project {
-  title: string;
-  description: string;
-  link?: string;
-  imageUrl?: string;
-  technologies?: string[];
-}
 
 const Projects: React.FC = () => {
   const [contentRef, contentInView] = useInView();
@@ -19,7 +12,7 @@ const Projects: React.FC = () => {
 
   return (
     <section id="projects" className="projects">
-      <div ref={contentRef} className="section-content">
+      <div ref={contentRef} className="projects-content">
         <h2
           className={`section-heading ${contentInView ? "animate__animated animate__fadeInDown" : ""
             }`}

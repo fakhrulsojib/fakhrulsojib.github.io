@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowUp } from "@fortawesome/free-solid-svg-icons";
-import ThemeToggler from "../../hooks/ThemeToggler";
+import ThemeToggler from "../../components/themeToggler/ThemeToggler";
 import Navigation from "./Navigation";
 import HamburgerMenu from "./HamburgerMenu";
 import portfolioData from "../../assets/data/navigation.json";

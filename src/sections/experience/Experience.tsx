@@ -6,23 +6,8 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { useInView } from "../../hooks/useInView";
 import experienceData from "../../assets/data/experience.json";
-import CompetitiveProgramming from "../competetive-programming/CompetitiveProgramming";
+import { ExperienceItem } from "../../types/data.types";
 import "./experience.css";
-
-interface Position {
-  designation: string;
-  "start-date": string;
-  "end-date": string;
-}
-
-interface ExperienceItem {
-  company: string;
-  type: string;
-  positions: Position[];
-  location: string;
-  "tech-stack": string[];
-  "profile-link"?: string;
-}
 
 const Experience: React.FC = () => {
   const { experience } = experienceData;
@@ -82,8 +67,6 @@ const Experience: React.FC = () => {
             </article>
           ))}
         </div>
-
-        <CompetitiveProgramming />
       </div>
     </section>
   );

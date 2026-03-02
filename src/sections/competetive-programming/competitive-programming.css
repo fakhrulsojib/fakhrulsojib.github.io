@@ -81,20 +81,9 @@
   gap: 0.75rem;
 }
 
-.handle {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  font-size: 1.1rem;
-  margin: 0;
-}
-
-.handle svg {
-  color: var(--primary-color);
-  opacity: 0.8;
-}
-
-.rating, .rank, .solved {
+.rating,
+.rank,
+.solved {
   margin: 0;
   color: var(--text-secondary);
   display: flex;
@@ -102,7 +91,8 @@
   gap: 0.5rem;
 }
 
-.rating span, .rank span {
+.rating span,
+.rank span {
   color: var(--primary-color);
   font-weight: 500;
 }
@@ -194,4 +184,4 @@
   .cp-achievements li {
     padding: 0.875rem 1rem;
   }
-} 
+}
