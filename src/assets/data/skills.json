@@ -9,6 +9,7 @@
             "React",
             "Oracle",
             "PostgreSQL",
+            "MySQL",
             "Docker",
             "Git"
         ],
@@ -18,8 +19,12 @@
             "ChromaDB",
             "Kafka",
             "AWS",
+            "Nginx",
             "Playwright",
             "JUnit",
+            "Selenium",
+            "GitHub Actions",
+            "LangGraph",
             "LLM (Ollama / Gemini)",
             "RAG Systems"
         ]

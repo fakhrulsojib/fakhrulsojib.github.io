@@ -24,6 +24,7 @@
         }
     ],
     "achievements": [
+        "Open Source (Apache POI): Fixed a core style propagation regression via multi-step inheritance fallback chain (PR #1031)",
         "Solved 2500+ problems across platforms",
         "Highest rating 1955 (Candidate Master), top 2.56% on Codeforces",
         "Ranked 21st in 2021 & 2022 ICPC Asia Dhaka Regional Online Preliminary Contests",

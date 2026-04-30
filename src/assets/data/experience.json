@@ -21,9 +21,13 @@
                 "Java",
                 "Spring Boot",
                 "React",
+                "LangGraph",
                 "Playwright",
+                "Nginx",
+                "Docker",
+                "Kafka",
                 "Oracle",
-                "Docker"
+                "Git"
             ]
         }
     ]
