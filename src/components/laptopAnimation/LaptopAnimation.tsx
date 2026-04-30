@@ -6,7 +6,10 @@ const LaptopAnimation: React.FC = () => {
   const [currentText, setCurrentText] = useState("");
   const [isErasing, setIsErasing] = useState(false);
   const [index, setIndex] = useState(0);
-  const skills = useMemo(() => Object.values(skillsData.skills).flat(), []);
+  const skills = useMemo(
+    () => Object.values(skillsData.skills).flat().map((s) => (s as { name: string }).name),
+    []
+  );
 
   useEffect(() => {
     let timer: ReturnType<typeof setTimeout>;

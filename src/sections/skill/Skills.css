@@ -71,6 +71,66 @@ body.dark .skill {
     border: 1px solid rgba(255, 255, 255, 0.06);
 }
 
+.skill-language {
+    border-left: 3px solid #6366f1;
+    background-color: rgba(99, 102, 241, 0.06);
+}
+
+.skill-framework {
+    border-left: 3px solid #10b981;
+    background-color: rgba(16, 185, 129, 0.06);
+}
+
+.skill-database {
+    border-left: 3px solid #06b6d4;
+    background-color: rgba(6, 182, 212, 0.06);
+}
+
+.skill-infra {
+    border-left: 3px solid #f59e0b;
+    background-color: rgba(245, 158, 11, 0.06);
+}
+
+.skill-testing {
+    border-left: 3px solid #f43f5e;
+    background-color: rgba(244, 63, 94, 0.06);
+}
+
+.skill-ai {
+    border-left: 3px solid #a78bfa;
+    background-color: rgba(167, 139, 250, 0.06);
+}
+
+body.dark .skill-language {
+    border-left-color: #818cf8;
+    background-color: rgba(129, 140, 248, 0.08);
+}
+
+body.dark .skill-framework {
+    border-left-color: #34d399;
+    background-color: rgba(52, 211, 153, 0.08);
+}
+
+body.dark .skill-database {
+    border-left-color: #22d3ee;
+    background-color: rgba(34, 211, 238, 0.08);
+}
+
+body.dark .skill-infra {
+    border-left-color: #fbbf24;
+    background-color: rgba(251, 191, 36, 0.08);
+}
+
+body.dark .skill-testing {
+    border-left-color: #fb7185;
+    background-color: rgba(251, 113, 133, 0.08);
+}
+
+body.dark .skill-ai {
+    border-left-color: #c4b5fd;
+    background-color: rgba(196, 181, 253, 0.08);
+}
+
 @media (max-width: 768px) {
     .skills-section {
         flex-direction: column;

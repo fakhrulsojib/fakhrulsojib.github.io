@@ -3,6 +3,7 @@ import "./Skills.css";
 import portfolioData from "../../assets/data/skills.json";
 import LaptopAnimation from "../../components/laptopAnimation/LaptopAnimation";
 import { useInView } from "../../hooks/useInView";
+import { Skill } from "../../types/data.types";
 
 const Skills: React.FC = () => {
   const [laptopRef, laptopInView] = useInView();
@@ -35,12 +36,12 @@ const Skills: React.FC = () => {
             >
               <h3>{groupName.charAt(0).toUpperCase() + groupName.slice(1)}</h3>
               <div className="skills-list-content">
-                {skills.map((skill: string, idx: number) => (
+                {(skills as Skill[]).map((skill: Skill, idx: number) => (
                   <div
-                    key={`${skill}-${idx}`}
-                    className={`skill ${groupName.toLowerCase()}`}
+                    key={`${skill.name}-${idx}`}
+                    className={`skill skill-${skill.category}`}
                   >
-                    {skill}
+                    {skill.name}
                   </div>
                 ))}
               </div>

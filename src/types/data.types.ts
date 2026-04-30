@@ -55,3 +55,8 @@ export interface SocialLink {
     url: string;
     icon: string;
 }
+
+export interface Skill {
+    name: string;
+    category: string;
+}

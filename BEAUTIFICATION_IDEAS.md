@@ -59,7 +59,7 @@ A prioritized list of visual enhancements for [fakhrulsojib.github.io](https://f
 - Add subtle particle network animation behind the hero section
 - Keeps existing balloons; adds AI-themed ambient effect alongside them
 
-**Status:** ⬜ Not started
+**Status:** ❌ Reverted
 
 ### 9. Skill Tags — Color-Coded by Category
 - Add `category` field to `skills.json` (Languages, Frameworks, Infra, AI/ML)
@@ -76,4 +76,4 @@ A prioritized list of visual enhancements for [fakhrulsojib.github.io](https://f
 - Pure CSS using layered radial gradients with slow animation
 - Visible but not distracting
 
-**Status:** ⬜ Not started
+**Status:** ❌ Reverted

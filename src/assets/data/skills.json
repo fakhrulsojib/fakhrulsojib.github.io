@@ -1,32 +1,32 @@
 {
     "skills": {
         "proficient": [
-            "Java",
-            "C++",
-            "Python",
-            "JavaScript",
-            "Spring Boot",
-            "React",
-            "Oracle",
-            "PostgreSQL",
-            "MySQL",
-            "Docker",
-            "Git"
+            { "name": "Java", "category": "language" },
+            { "name": "C++", "category": "language" },
+            { "name": "Python", "category": "language" },
+            { "name": "JavaScript", "category": "language" },
+            { "name": "Spring Boot", "category": "framework" },
+            { "name": "React", "category": "framework" },
+            { "name": "Oracle", "category": "database" },
+            { "name": "PostgreSQL", "category": "database" },
+            { "name": "MySQL", "category": "database" },
+            { "name": "Docker", "category": "infra" },
+            { "name": "Git", "category": "infra" }
         ],
         "familiar": [
-            "FastAPI",
-            "Redis",
-            "ChromaDB",
-            "Kafka",
-            "AWS",
-            "Nginx",
-            "Playwright",
-            "JUnit",
-            "Selenium",
-            "GitHub Actions",
-            "LangGraph",
-            "LLM (Ollama / Gemini)",
-            "RAG Systems"
+            { "name": "FastAPI", "category": "framework" },
+            { "name": "Redis", "category": "database" },
+            { "name": "ChromaDB", "category": "ai" },
+            { "name": "Kafka", "category": "infra" },
+            { "name": "AWS", "category": "infra" },
+            { "name": "Nginx", "category": "infra" },
+            { "name": "Playwright", "category": "testing" },
+            { "name": "JUnit", "category": "testing" },
+            { "name": "Selenium", "category": "testing" },
+            { "name": "GitHub Actions", "category": "infra" },
+            { "name": "LangGraph", "category": "ai" },
+            { "name": "LLM (Ollama / Gemini)", "category": "ai" },
+            { "name": "RAG Systems", "category": "ai" }
         ]
     }
 }
