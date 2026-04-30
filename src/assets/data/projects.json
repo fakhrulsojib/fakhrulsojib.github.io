@@ -1,6 +1,19 @@
 {
     "projects": [
         {
+            "title": "MarkUp",
+            "description": "Chrome Extension that renders Markdown files beautifully in-browser with themes, syntax highlighting, TOC sidebar, search, and Mermaid diagrams.",
+            "link": "https://github.com/fakhrulsojib/markUp",
+            "imageUrl": "/images/markup_project.png",
+            "technologies": [
+                "Chrome Extension",
+                "Manifest V3",
+                "Vanilla JS",
+                "HTML",
+                "CSS"
+            ]
+        },
+        {
             "title": "Pulse AI",
             "description": "Real-time log analytics pipeline with unsupervised anomaly detection and RAG-based NL queries via local LLM.",
             "link": "https://github.com/fakhrulsojib/Pulse-AI",
