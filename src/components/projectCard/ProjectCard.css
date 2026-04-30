@@ -82,7 +82,8 @@
   color: var(--text-color);
   padding: 4px 12px;
   border-radius: 15px;
-  font-size: 0.85rem;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.8rem;
   border: 1px solid var(--text-color);
   transition: all 0.2s ease;
 }
@@ -99,6 +100,31 @@
   
   .technology-tag {
     padding: 3px 10px;
-    font-size: 0.8rem;
+    font-size: 0.75rem;
   }
-} 
+}
+
+body.dark .project-card {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+body.dark .project-card:hover {
+  box-shadow: 0 12px 40px rgba(99, 102, 241, 0.15);
+  border-color: rgba(129, 140, 248, 0.15);
+}
+
+body.dark .technology-tag {
+  background-color: rgba(255, 255, 255, 0.04);
+  border-color: rgba(255, 255, 255, 0.12);
+  color: var(--text-secondary);
+}
+
+body.dark .technology-tag:hover {
+  background-color: rgba(129, 140, 248, 0.15);
+  border-color: rgba(129, 140, 248, 0.3);
+  color: var(--primary-color);
+}

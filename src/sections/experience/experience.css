@@ -137,7 +137,8 @@
   background: rgba(var(--primary-color-rgb), 0.05);
   padding: 0.5rem 0.75rem;
   border-radius: 6px;
-  font-size: 0.9rem;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.8rem;
   color: var(--text-secondary);
 }
 
@@ -183,4 +184,18 @@
   .responsibilities li {
     flex: 0 1 auto;
   }
-} 
+}
+
+body.dark .experience-card {
+  padding-left: 2rem;
+}
+
+body.dark .responsibilities li {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+body.dark .type {
+  background: rgba(129, 140, 248, 0.08);
+  border: 1px solid rgba(129, 140, 248, 0.12);
+}

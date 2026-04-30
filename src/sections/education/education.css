@@ -109,7 +109,8 @@
   background: rgba(var(--primary-color-rgb), 0.1);
   padding: 0.5rem 1rem;
   border-radius: 20px;
-  font-size: 0.9rem;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.8rem;
   color: var(--text-primary);
   transition: all 0.2s ease;
 }
@@ -185,4 +186,22 @@
   .highlights-list {
     grid-template-columns: 1fr;
   }
-} 
+}
+
+body.dark .education-card {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+body.dark .course-tag {
+  background: rgba(129, 140, 248, 0.08);
+  border: 1px solid rgba(129, 140, 248, 0.12);
+}
+
+body.dark .highlights-list li {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
