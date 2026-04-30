@@ -8,6 +8,7 @@ import {
   faChartLine,
 } from "@fortawesome/free-solid-svg-icons";
 import { useInView } from "../../hooks/useInView";
+import TiltCard from "../../components/tiltCard/TiltCard";
 import cpData from "../../assets/data/competetive-programming.json";
 import { CPProfile } from "../../types/data.types";
 import "./competitive-programming.css";
@@ -27,43 +28,44 @@ const CompetitiveProgramming: React.FC = () => {
 
         <div className="cp-profiles">
           {profiles.map((profile: CPProfile, index) => (
-            <a
-              href={profile.profile}
-              target="_blank"
-              rel="noopener noreferrer"
-              key={index}
-              className="cp-card"
-            >
-              <div className="cp-card-header">
-                <h3>{profile.platform}</h3>
-                <FontAwesomeIcon icon={faCode} />
-              </div>
+            <TiltCard key={index} maxTilt={14}>
+              <a
+                href={profile.profile}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="cp-card"
+              >
+                <div className="cp-card-header">
+                  <h3>{profile.platform}</h3>
+                  <FontAwesomeIcon icon={faCode} />
+                </div>
 
-              <div className="cp-card-content">
-                <p className="rating">
-                  <FontAwesomeIcon icon={faChartLine} />
-                  Max Rating: <span>{profile["max-rating"]}</span>
-                </p>
+                <div className="cp-card-content">
+                  <p className="rating">
+                    <FontAwesomeIcon icon={faChartLine} />
+                    Max Rating: <span>{profile["max-rating"]}</span>
+                  </p>
 
-                <p className="rank">
-                  <FontAwesomeIcon icon={faRankingStar} />
-                  Rank:{" "}
-                  <span style={{ color: profile.rank.color }}>
-                    {profile.rank.name}
-                  </span>
-                </p>
+                  <p className="rank">
+                    <FontAwesomeIcon icon={faRankingStar} />
+                    Rank:{" "}
+                    <span style={{ color: profile.rank.color }}>
+                      {profile.rank.name}
+                    </span>
+                  </p>
 
-                <p className="solved">
-                  <FontAwesomeIcon icon={faSquareCheck} />
-                  Problems solved: {profile.solved}
-                </p>
+                  <p className="solved">
+                    <FontAwesomeIcon icon={faSquareCheck} />
+                    Problems solved: {profile.solved}
+                  </p>
 
-                <p className="contests">
-                  <FontAwesomeIcon icon={faTrophy} />
-                  Contests: {profile["contest-participation"]}
-                </p>
-              </div>
-            </a>
+                  <p className="contests">
+                    <FontAwesomeIcon icon={faTrophy} />
+                    Contests: {profile["contest-participation"]}
+                  </p>
+                </div>
+              </a>
+            </TiltCard>
           ))}
         </div>
 

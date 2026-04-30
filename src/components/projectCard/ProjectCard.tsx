@@ -1,5 +1,6 @@
 import React from "react";
 import "./ProjectCard.css";
+import { useTilt } from "../../hooks/useTilt";
 
 interface ProjectCardProps {
   title: string;
@@ -18,8 +19,16 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   technologies,
   defaultImage,
 }) => {
+  const { ref, handleMouseMove, handleMouseLeave } = useTilt({ maxTilt: 10 });
+
   return (
-    <div className="project-card">
+    <div
+      ref={ref}
+      className="project-card"
+      onMouseMove={handleMouseMove}
+      onMouseLeave={handleMouseLeave}
+    >
+      <div className="tilt-spotlight" />
       <div className="project-card-image-wrapper">
         <img
           src={imageUrl || defaultImage}

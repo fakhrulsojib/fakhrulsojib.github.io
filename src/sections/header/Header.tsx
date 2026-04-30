@@ -1,13 +1,18 @@
 import React, { useState, useEffect, useRef } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowUp } from "@fortawesome/free-solid-svg-icons";
+import { faArrowUp, faTerminal, faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import ThemeToggler from "../../components/themeToggler/ThemeToggler";
 import Navigation from "./Navigation";
 import HamburgerMenu from "./HamburgerMenu";
 import portfolioData from "../../assets/data/navigation.json";
 import "./header.css";
 
-const Header: React.FC = () => {
+interface HeaderProps {
+  onTerminalToggle: () => void;
+  onPaletteToggle: () => void;
+}
+
+const Header: React.FC<HeaderProps> = ({ onTerminalToggle, onPaletteToggle }) => {
   const { navigation } = portfolioData;
 
   const [selectedSection, setSelectedSection] = useState<string>(
@@ -115,6 +120,22 @@ const Header: React.FC = () => {
           closeMenu={() => setIsMenuOpen(false)}
         >
           <ThemeToggler />
+          <button
+            className="header-icon-btn"
+            onClick={onPaletteToggle}
+            aria-label="Command Palette"
+            title="Search (Ctrl+K)"
+          >
+            <FontAwesomeIcon icon={faMagnifyingGlass} />
+          </button>
+          <button
+            className="header-icon-btn"
+            onClick={onTerminalToggle}
+            aria-label="Terminal"
+            title="Terminal (Ctrl+`)"
+          >
+            <FontAwesomeIcon icon={faTerminal} />
+          </button>
         </Navigation>
         <HamburgerMenu
           ref={hamburgerRef}
