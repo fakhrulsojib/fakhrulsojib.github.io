@@ -1,9 +1,10 @@
 {
-    "heading": "Hi! I am ",
+    "heading": "Hi, I'm",
     "name": "Md Fakhrul Islam",
-    "tagline": "Software Engineer & AI Enthusiast.",
-    "about": "Software Engineer at Therap Services LLC with a background in Mathematics from Shahjalal University of Science and Technology. I specialize in building fault-tolerant backend systems, full-stack applications, and integrating applied AI (Agents, RAG, LLMs) into modern architectures. I also have a strong foundation in problem-solving, having practiced competitive programming extensively for over 4 years.",
+    "tagline": "Software Engineer & AI Enthusiast",
+    "about": "Building fault-tolerant backend systems and integrating applied AI at Therap Services. Competitive programmer with ICPC Regional experience and 2000+ problems solved.",
     "resumeLink": "https://github.com/fakhrulsojib/resume-public",
+    "profileImage": "/src/assets/images/profile.png",
     "socialLinks": [
         {
             "name": "GitHub",
