@@ -1,6 +1,22 @@
 {
     "projects": [
         {
+            "title": "SupportForge",
+            "description": "Multi-tenant AI customer support platform with RAG pipeline (LangGraph + ChromaDB), real-time WebSocket streaming, voice support (STT/TTS), self-hosted & cloud LLMs, admin panel with analytics, and embeddable chat widget.",
+            "link": "https://github.com/fakhrulsojib/supportforge-api",
+            "imageUrl": "/images/supportforge_project.png",
+            "technologies": [
+                "FastAPI",
+                "React",
+                "LangGraph",
+                "ChromaDB",
+                "PostgreSQL",
+                "Redis",
+                "Docker",
+                "WebSocket"
+            ]
+        },
+        {
             "title": "MarkUp",
             "description": "Chrome Extension that renders Markdown files beautifully in-browser with themes, syntax highlighting, TOC sidebar, search, and Mermaid diagrams.",
             "link": "https://github.com/fakhrulsojib/markUp",
