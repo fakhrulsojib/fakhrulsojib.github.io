@@ -40,6 +40,9 @@ body {
 
 #root {
   unicode-bidi: isolate;
+  width: 100%;
+  min-width: 0;
+  overflow-x: hidden;
 }
 
 section {
