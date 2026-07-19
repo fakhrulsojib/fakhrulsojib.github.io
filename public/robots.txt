@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://fakhrulsojib.github.io/sitemap.xml
+Sitemap: https://fakhrulsojib.me/sitemap.xml
